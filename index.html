@@ -34,33 +34,33 @@
       <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
        <div id="myDropdown" class="dropdown-content">
          <a href="#"><label>Moi</label></a>
-         <a href="#"><label>Travaux</label></a>
-         <a href="#parcours"><label>Graphique</label></a>
-         <a href="#travaux"><label>C.V</label></a>
+         <a href="#Travaux"><label>Travaux</label></a>
+         <a href="#Graphique"><label>Graphique</label></a>
+         <a href="#"><label>C.V</label></a>
          <a href="#contact"><label>Me contacter</label></a>
        </div>
 
-       <div class="flex center">
-         <img src="img/onglet.png" alt="">
-       </div>
+       <aside class="">
+         <img src="img/diver_f.png" alt="">
+       </aside>
 
     </div>
   </nav>
                             <!-- Start Header -->
 <header class="flex column centerC">
   <article class="flex column centerC">
-
+    <div class="flex center">
+      <img src="img/photo.jpg" alt="">
+    </div>
     <div id="simonTitre">
       <h1 class="fontcolor centerT"><span>S</span>im<span><img id="simon" src="img/onglet.png" alt=""></span>n</h1>
     </div>
     <p>Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus.
-       Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.
-       Divitior mihi et affluentior videtur esse vera amicitia nec observare restricte, ne plus reddat quam acceperit;
-       neque enim verendum est, ne quid excidat, aut ne quid in terram defluat, aut ne plus aequo quid in amicitiam congeratur.</p>
+       Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.</p>
     <ul class="flex between centerC">
-      <li> <a href="#">Travaux</a> </li>
+      <li> <a href="#Travaux">Travaux</a> </li>
       <li> <a href="#">C.V</a> </li>
-      <li> <a href="#">Graphique</a> </li>
+      <li> <a href="#Graphique">Graphique</a> </li>
       <li> <a href="#">Contact</a> </li>
     </ul>
   </article>
@@ -86,12 +86,12 @@
 <!-- Start "Travaux section"-->
 <main class="flex column centerC">
   <article class="flex column">
-    <h2 class="fontcolor centerT"><span>T</span>ravaux</h2>
-    <i class="fab fa-github fa-2x"></i>
-    <a class="centerT" href="https://github.com/obero0n">Github</a>
+    <h2 id="Travaux" class="fontcolor centerT"><span>T</span>ravaux</h2>
     <img src="img/diver.jpg" alt="">
-    <div class="flexStart">
+    <div class="flex column centerC">
       <h3>titre de texte</h3>
+      <i class="fab fa-github fa-3x"></i>
+      <a class="centerT" href="https://github.com/obero0n">Github</a>
       <p>Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus.
          Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.
          Divitior mihi et affluentior videtur esse vera amicitia nec observare restricte, ne plus reddat quam acceperit;
@@ -101,10 +101,10 @@
 <!-- End "Travaux" section-->
 <!-- Start "Graphique" section"-->
 <article class="flex column">
-  <h2 class="fontcolor centerT"><span>G</span>raphique</h2>
+  <h2 id="Graphique" class="fontcolor centerT"><span>G</span>raphique</h2>
   <i> <a href="#">lien?(deviant art/pinterst)</a> </i>
   <img src="" alt="">
-  <div class="flexStart">
+  <div class="flex column centerC">
     <h3>titre du texte</h3>
     <p>Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus.
        Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.
@@ -130,18 +130,18 @@
 <footer class="flex column centerC">
   <p class="centerT">Pour me contacter</p>
   <a href="mailto:simon.dubuis.design@gmail.com">simon.dubuis.design@gmail.com</a>
-  <ul class="flex">
-    <li>
-      <i>icone</i>
+  <ul class="flex between">
+    <li class="flex column centerC">
+      <i class="fab fa-twitter fa-3x"></i>
       <a href="#">twitter</a>
     </li>
-    <li>
-      <i>icone</i>
+    <li class="flex column centerC">
+      <i class="fab fa-github fa-3x"></i>
       <a href="#">github</a>
     </li>
-    <li>
-      <i>icone</i>
-      <a href="#">linkdn</a>
+    <li class="flex column centerC">
+      <i class="fab fa-linkedin-in fa-3x"></i>
+      <a href="#">linkedin</a>
     </li>
   </ul>
 </footer>

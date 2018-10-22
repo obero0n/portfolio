@@ -146,7 +146,8 @@ body{
   z-index: -1;
 }
 h1{
-  font-size: 6em;
+  font-size: 4.5em;
+  margin: 0;
 }
 
 #simonTitre{
@@ -154,10 +155,14 @@ h1{
   transition: 1.6s;
   z-index: -1;
 }
-h2, h3, p, a{
+h3, p, a{
   color: white;
   font-family: 'Quattrocento Sans', sans-serif;
 }
+h2{
+  font-size: 3em;
+}
+
 h3{
   color: #FF8C35;
 }
@@ -172,7 +177,6 @@ li{
 }
 p{
   width: 80%;
-  height: 20vh auto;
   font-family: 'Quattrocento Sans', sans-serif;
 }
 header{
@@ -195,6 +199,10 @@ nav{
 }
 nav div:first-child {
   width: 80%;
+}
+
+nav aside{
+  width: 20%;
 }
 
 
@@ -223,13 +231,13 @@ nav div:first-child {
    {
        display: none;
        position: absolute;
-       background-color: rgba(64, 196, 137, 0.5);
+       background-color: rgba(64, 196, 137, 0.7);
        min-width: 160px;
        overflow: auto;
        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
        z-index: 1;
        left: 0;
-       margin-top: 10.1em;
+       margin-top: 12.9em;
        z-index: 99999;
    }
 
@@ -240,6 +248,7 @@ nav div:first-child {
        text-decoration: none;
        display: block;
        font-family: 'Megrim', cursive;
+       font-size: 1.8em;
    }
 
    .dropdown a:hover
@@ -259,13 +268,29 @@ nav div:first-child {
 
 /* End Nav  */
 /* start Header  */
+header article{
+  height: 85vh;
+}
+header article div:first-child{
+  width: 65%;
+  height: 60vh;
 
+  background-color: red;
+}
+header article div:first-child img{
+  border-radius: 50%;
+  background-color: red;
+}
 header ul{
   width: 80%;
   height: 10vh;
+  padding: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(154, 114, 81, 0.9);
 }
 #simon{
-  width: 23%;
+  width: 22%;
 }
                                     /* bubble o°*/
 
@@ -337,6 +362,12 @@ main article i {
   align-self: center;
 }
 /* End Main  */
+/* Start Footer */
+footer ul{
+  width: 80%;
+  padding: 0;
+}
+/* End Footer */
 
                                 /* tablette */
 @media screen and (min-width: 600px){
