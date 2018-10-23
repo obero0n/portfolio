@@ -155,15 +155,11 @@ h1{
   transition: 1.6s;
   z-index: -1;
 }
-h3, p, a{
+h3, h4, h5, h6, p, a{
   color: white;
   font-family: 'Quattrocento Sans', sans-serif;
 }
-h2{
-  font-size: 3em;
-}
-
-h3{
+h3, h4{
   color: #FF8C35;
 }
 span{
@@ -178,11 +174,15 @@ li{
 p{
   width: 80%;
   font-family: 'Quattrocento Sans', sans-serif;
+
 }
 header{
   margin-top: 15vh;
 }
 i{
+  color: white;
+}
+main ul{
   color: white;
 }
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°End Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
@@ -272,19 +272,15 @@ header article{
   height: 85vh;
 }
 header article div:first-child{
-  width: 65%;
-  height: 60vh;
-
-  background-color: red;
+  width: 55%;
 }
 header article div:first-child img{
   border-radius: 50%;
-  background-color: red;
 }
 header ul{
+  margin: 0;
   width: 80%;
-  height: 10vh;
-  padding: 0;
+  height: 100%;
   padding-left: 10%;
   padding-right: 10%;
   background-color: rgba(154, 114, 81, 0.9);
@@ -361,6 +357,15 @@ header ul{
 main article i {
   align-self: center;
 }
+
+#cv{
+  background-color: rgba(64, 196, 137, 0.2);
+}
+
+/* main CV section */
+
+
+/* end main CV section */
 /* End Main  */
 /* Start Footer */
 footer ul{
@@ -371,6 +376,14 @@ footer ul{
 
                                 /* tablette */
 @media screen and (min-width: 600px){
+/* nav tablette */
+  nav aside {
+    width: 10%;
+}
+  /* header tablette */
+  header article div:first-child {
+      width: 45%;
+  }
 
 }
 
