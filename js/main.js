@@ -5,12 +5,14 @@ function unBlur(){
   mainTitle.style.filter = "blur(0rem)";
 }
 window.setInterval(unBlur, 400);
+// End blur effect
 
+// button mobile/tablette
 function myFunction()
 {
    document.getElementById("myDropdown").classList.toggle("show");
 }
-                  // End blur effect
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event)
 {
@@ -28,6 +30,33 @@ window.onclick = function(event)
    }
  }
 }
+// button Desktop
+function myButton()
+{
+   document.getElementById("myDrop").classList.toggle("view");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event)
+{
+ if (!event.target.matches('.dropbuttn'))
+ {
+   var dropdowns = document.getElementsByClassName("dropdown-contenue");
+   var i;
+   for (i = 0; i < dropdowns.length; i++)
+   {
+     var openDropdown = dropdowns[i];
+     if (openDropdown.classList.contains('show'))
+     {
+       openDropdown.classList.remove('show');
+     }
+   }
+ }
+}
+
+
+
+
 
 // bubulle
 

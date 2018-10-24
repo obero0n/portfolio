@@ -43,14 +43,17 @@
       <!-- Naviagtion bar mobile/Tablette /// logo 'diver' menu Desktop  -->
   <nav class="flex center">
     <div class="flex between centerC">
-      <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-       <div id="myDropdown" class="dropdown-content">
-         <a href="#"><label>Moi</label></a>
-         <a href="#Travaux"><label>Travaux</label></a>
-         <a href="#Graphique"><label>Graphique</label></a>
-         <a href="#"><label>C.V</label></a>
-         <a href="#contact"><label>Me contacter</label></a>
-       </div>
+      <div>
+        <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+         <div id="myDropdown" class="dropdown-content">
+           <a href="#"><label>Moi</label></a>
+           <a href="#Travaux"><label>Travaux</label></a>
+           <a href="#Graphique"><label>Graphique</label></a>
+           <a href="#"><label>C.V</label></a>
+           <a href="#contact"><label>Me contacter</label></a>
+         </div>
+      </div>
+
 
        <aside>
          <img src="img/diver_f.png" alt="">
@@ -59,9 +62,25 @@
     </div>
   </nav>
   <div id="diverDesk" class="hidden flexEnd">
-    <div >
+    <!-- <div >
       <img id="floating" src="img/diver_f.png" alt="">
+    </div> -->
+
+    <div id="theButton">
+      <button onclick="myButton()" class="dropbuttn"><img id="floating" src="img/diver_f.png" alt=""></button>
+       <div id="myDrop" class="dropdown-contenue">
+         <a href="#"><label>Moi</label></a>
+         <a href="#Travaux"><label>Travaux</label></a>
+         <a href="#Graphique"><label>Graphique</label></a>
+         <a href="#"><label>C.V</label></a>
+         <a href="#contact"><label>Me contacter</label></a>
+       </div>
     </div>
+
+
+
+
+
   </div>
                             <!-- Start Header -->
 <header class="flex column centerC">
