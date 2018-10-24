@@ -28,6 +28,18 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+
+   <!-- test aside diver -->
+  <!-- <div class="tape">
+    <div class="horizontal-stripe"></div>
+    <div class="hor"></div>
+  </div> -->
+<!-- end test aside diver -->
+
+
+
+
+
       <!-- Naviagtion bar mobile/Tablette /// logo 'diver' menu Desktop  -->
   <nav class="flex center">
     <div class="flex between centerC">
@@ -40,12 +52,17 @@
          <a href="#contact"><label>Me contacter</label></a>
        </div>
 
-       <aside class="">
+       <aside>
          <img src="img/diver_f.png" alt="">
        </aside>
 
     </div>
   </nav>
+  <div id="diverDesk" class="hidden flexEnd">
+    <div >
+      <img id="floating" src="img/diver_f.png" alt="">
+    </div>
+  </div>
                             <!-- Start Header -->
 <header class="flex column centerC">
   <article class="flex column centerC">
@@ -100,6 +117,19 @@
     </div>
   </article>
 <!-- End "Travaux" section-->
+<!-- bubble o° -->
+<div class="boxBubble">
+ <div  class="rightBar"></div>
+ <div class="fix">
+   <div class="bubble">
+    <div class="little"></div>
+    <div class="medium"></div>
+    <div class="big"></div>
+   </div>
+ </div>
+ <div  class="leftBar"></div>
+</div>
+<!-- End bubble o° -->
 <!-- Start "Graphique" section"-->
 <article class="flex column">
   <h3 id="Graphique" class="fontcolor centerT"><span>G</span>raphique</h3>
@@ -115,18 +145,20 @@
 </article>
 <!-- bubble o° -->
 <div class="boxBubble">
-  <div  class="rightBar"></div>
-  <div class="bubble">
+ <div  class="rightBar"></div>
+ <div class="fix">
+   <div class="bubble">
     <div class="little"></div>
     <div class="medium"></div>
     <div class="big"></div>
-  </div>
-  <div  class="leftBar"></div>
+   </div>
+ </div>
+ <div  class="leftBar"></div>
 </div>
 <!-- End bubble o° -->
 <!-- End "Graphique" section"-->
                                                           <!-- start CV section -->
-<article id="cv" class="flex column centerC centerT">
+<article id="cv" class="centerT">
 <h3 class="fontcolor centerT"><span>C</span>.V</h3>
 <section>
   <article class="flex column centerC">
@@ -139,21 +171,21 @@ Savoir gérer les délais de réalisations,la relation client.</p>
   </article>
   <article class="flex column centerC">
     <h4>Formation</h4>
-    <ul>
-      <li>BTS (Alternance)<br>
+    <ul class="centerT">
+      <li><span>BTS (Alternance)</span><br>
           Graphiste-Concepteur en Communication Multicanal CEPRECO<br>
           Roubaix (59)
       </li>
-      <li>UFR LLCE Langues,<br>
+      <li><span>UFR LLCE Langues,</span><br>
           Littératures et Civilisations étrangères Lille 3,<br>
           Villeneuve-dAscq (59)
       </li>
-      <li>BACCALAURÉAT Professionnel, Artisanat et Métiers d’art,
+      <li><span>BACCALAURÉAT Professionnel, Artisanat et Métiers d’art,</span><br>
           Option Communication graphique<br>
           Lycée Le corbusier,<br>
           Tourcoing (59)
       </li>
-      <li>CAP Dessinateur d’éxécution en communication graphique <br>
+      <li><span>CAP Dessinateur d’éxécution en communication graphique</span><br>
         Lycée LE CORBUSIER<br>
         Tourcoing (59)
       </li>
@@ -161,7 +193,7 @@ Savoir gérer les délais de réalisations,la relation client.</p>
   </article>
 </section>
 <section>
-  <h4>expérience</h4>
+  <h4>Expérience</h4>
   <article class="flex column centerC">
     <h5>Alpha pub</h5>
     <h6>Éxécution en communication graphique</h6>
@@ -236,6 +268,8 @@ Savoir gérer les délais de réalisations,la relation client.</p>
   </ul>
 </footer>
                               <!-- End Footer -->
+
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
