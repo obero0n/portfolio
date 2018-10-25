@@ -101,3 +101,13 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
+
+// button image hiddden
+var button = document.getElementsByClassName('hiddenBtn')[0];
+var image = document.getElementsByClassName('hiddenImg')[0];
+
+window.afficher = function(){
+image.style.display = (image.style.display == "block") ? "none" : "block";
+}
+
+button.onclick = afficher;

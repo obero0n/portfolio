@@ -135,12 +135,17 @@ textarea {
 .flexEnd{
   justify-content: flex-end;
 }
+
+.hiddenImg{
+  display: none;
+}
+
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°End Utility°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°Start Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
-/* *{
+*{
   margin: 0;
   padding: 0;
-} */
+}
 body{
 
   background-image: linear-gradient(#51799A, #1E2D3A);
@@ -153,7 +158,7 @@ body{
   z-index: -1;
 }
 h1{
-  font-size: 4.5em;
+  font-size: 4em;
   margin: 0;
 }
 h3{
@@ -194,10 +199,12 @@ li{
 p{
   width: 80%;
   font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 0.8em;
 
 }
 header{
   margin-top: 15vh;
+  height: 100vh;
 }
 i{
   color: white;
@@ -224,7 +231,9 @@ nav div:first-child {
 nav aside{
   width: 20%;
 }
-
+#theButton{
+  display: none;
+}
 
 
 
@@ -255,7 +264,7 @@ nav aside{
        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
        z-index: 1;
        left: 0;
-       margin-top: 1.35em;
+       margin-top: 0.65em;
        z-index: 99999;
    }
    .dropdown-content a
@@ -283,7 +292,7 @@ nav aside{
 /* End Nav  */
 /* start Header  */
 header article{
-  height: 85vh;
+  height: 100%;
 }
 header article div:first-child{
   width: 55%;
@@ -294,7 +303,6 @@ header article div:first-child img{
 header ul{
   margin: 0;
   width: 80%;
-  height: 100%;
   padding-left: 10%;
   padding-right: 10%;
   background-color: rgba(154, 114, 81, 0.9);
@@ -453,7 +461,12 @@ h3{
 }
 h4{
   font-size: 2em;
-
+}
+header a{
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  text-decoration: none;
 }
 /* end common desktop */
 
@@ -461,6 +474,11 @@ h4{
 
 
 /* Start dropwdown button */
+
+#theButton{
+  display: block;
+}
+
 .dropbuttn
    {
      background-color: transparent;
@@ -510,13 +528,15 @@ nav{
 #diverDesk{
   display: flex !important;
   width: 100%;
-  height: 100%;
+  height: 35%;
   position: fixed;
   top: 0;
 }
 #diverDesk div{
   margin-right: 1em;
   margin-top: 0.5em;
+  width: 6%;
+
 }
  /* floating diver  */
 #floating {
@@ -538,6 +558,17 @@ nav{
  header article div:first-child {
      width: 25%;
  }
+ header{
+   margin: 0;
+   height: 100vh;
+ }
+ header article{
+   justify-content: space-between;
+ }
+ header ul{
+   height: 20%;
+ }
+
  /* End header Desktop */
  /* Start main Desktop */
 
