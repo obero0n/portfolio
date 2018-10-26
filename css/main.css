@@ -136,9 +136,6 @@ textarea {
   justify-content: flex-end;
 }
 
-.hiddenImg{
-  display: none;
-}
 
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°End Utility°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°Start Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
@@ -577,11 +574,19 @@ main img{
 }
 main:not(.boxBubble){
   align-items: flex-start !important;
+  width: 100%;
+
+}
+#articleBox{
+  background-color: pink;
+  width: 90%;
+  display: flex;
 }
 main article{
-  width: 85%;
-  align-items: flex-start !important;
+  width: 30%;
+  background-color: lightgrey;
   margin-left: 3%;
+
 }
 main article div{
   align-items: flex-start !important;
