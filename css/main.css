@@ -180,6 +180,7 @@ h5, h6{
 h3, h4, h5, h6, p, a{
   color: white;
   font-family: 'Quattrocento Sans', sans-serif;
+
 }
 h4{
   color: #FF8C35;
@@ -451,10 +452,13 @@ h3,h4,h5,h6{
 }
 p{
   text-align: left !important;
+  font-size: 1.5em;
 }
 h3{
   font-size: 4em;
   margin: 0;
+  background-color: red;
+
 }
 h4{
   font-size: 2em;
@@ -570,22 +574,21 @@ nav{
  /* Start main Desktop */
 
 main img{
-  width: 60%;
+  width: 100%;
 }
 main:not(.boxBubble){
-  align-items: flex-start !important;
+
   width: 100%;
 
 }
 #articleBox{
-  background-color: pink;
   width: 90%;
   display: flex;
 }
 main article{
   width: 30%;
-  background-color: lightgrey;
-  margin-left: 3%;
+  background-color: rgba(64, 196, 137, 0.2);
+  padding: 1em;
 
 }
 main article div{
