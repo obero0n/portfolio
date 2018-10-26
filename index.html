@@ -62,11 +62,7 @@
     </div>
   </nav>
   <div id="diverDesk" class="hidden flexEnd">
-    <!-- <div >
-      <img id="floating" src="img/diver_f.png" alt="">
-    </div> -->
-
-    <div id="theButton">
+  <div id="theButton">
       <button onclick="myButton()" class="dropbuttn"><img id="floating" src="img/diver_f.png" alt=""></button>
        <div id="myDrop" class="dropdown-contenue">
          <a href="#"><label>Moi</label></a>
@@ -75,15 +71,10 @@
          <a href="#"><label>C.V</label></a>
          <a href="#contact"><label>Me contacter</label></a>
        </div>
-    </div>
-
-
-
-
-
+  </div>
   </div>
                             <!-- Start Header -->
-<header class="flex column centerC">
+<header class="flex column ">
   <article class="flex column centerC">
     <div class="flex center">
       <img src="img/photo.jpg" alt="">
@@ -92,8 +83,15 @@
       <h1 class="fontcolor centerT"><span>S</span>im<span><img id="simon" src="img/onglet.png" alt=""></span>n</h1>
     </div>
     <h2 class="fontcolor centerT">développeur Jr / Graphiste Illustrateur</h2>
-    <p class="centerT">Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus.
-       Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.</p>
+    <p class="centerT">Bonjour, je m'appelle <span>Simon</span>,<br>
+      je suis developpeur web Jr.<br>
+      Passionnée par les nouvelles technologies,le développement web me permet d'exprimer ma <span>créativité</span>.<br>
+      J'aime travailler sur des projets variés : de l'intégration de sites vitrines <span>HTML/CSS</span><br>
+      , au développement de sites dynamiques avec <span>Php</span> et <span>Javascript</span>.<br>
+      Une <span>polyvalence</span> que je detiens grace à un <span>parcours professionnel de graphiste en entreprise</span> riche en expériences.
+
+
+    </p>
     <ul class="flex between centerC">
       <li> <a href="#Travaux">Travaux</a> </li>
       <li> <a href="#">C.V</a> </li>
@@ -101,6 +99,7 @@
       <li> <a href="#">Contact</a> </li>
     </ul>
   </article>
+  </header>
                       <!-- bubble o° -->
   <div class="boxBubble">
    <div  class="rightBar"></div>
@@ -117,24 +116,55 @@
    <div  class="leftBar"></div>
   </div>
                       <!-- End bubble o° -->
-</header>
+
                               <!-- End Header -->
                               <!-- Start main -->
 <!-- Start "Travaux section"-->
 <main class="flex column centerC">
-  <article class="flex column">
-    <h3 id="Travaux" class="fontcolor centerT"><span>T</span>ravaux</h3>
-    <img src="img/diver.jpg" alt="">
-    <div class="flex column centerC">
-      <h4>titre de texte</h4>
-      <i class="fab fa-github fa-3x"></i>
-      <a class="centerT" href="https://github.com/obero0n">Github</a>
-      <p class="centerT">Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus.
-         Hoc quidem est nimis exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum.
-         Divitior mihi et affluentior videtur esse vera amicitia nec observare restricte, ne plus reddat quam acceperit;
-         neque enim verendum est, ne quid excidat, aut ne quid in terram defluat, aut ne plus aequo quid in amicitiam congeratur.</p>
-    </div>
-  </article>
+  <h3 id="Travaux" class="fontcolor"><span>T</span>ravaux</h3>
+  <div id="articleBox" class="">
+    <article class="flex column">
+      <img class="hiddenImg" src="img/terreGeek.png" alt=""/>
+      <div class="flex column centerC">
+        <h4>Terre de Geek</h4>
+        <i class="fab fa-github fa-3x"></i>
+        <a class="centerT" href="https://github.com/obero0n/terre-de-geek">Github</a>
+        <p class="centerT">
+          TerreDeGeek SARL est une entreprise familiale de vente de produits électroniques.<br>
+          L’objectif etait d'etre capable d’appliquer les grands types
+          de mises en forme sur vos éléments HTML en sachant les sélectionner correctement et de manière maintenable et de
+          positionner où vous le souhaiter sur la page pour donner à vos créations le rendu espéré.
+        </p>
+      </div>
+    </article>
+    <article class="flex column">
+      <img class="hiddenImg" src="img/twitterPage.png" alt=""/>
+      <div class="flex column centerC">
+        <h4>Twitter main Page</h4>
+        <i class="fab fa-github fa-3x"></i>
+        <a class="centerT" href="https://github.com/obero0n/page-twitter">Github</a>
+        <p class="centerT">
+          Reproduction de la page d’acceuil du réseau social favori des développeur : Twitter.
+
+
+        </p>
+      </div>
+    </article>
+    <article class="flex column">
+      <img class="hiddenImg" src="img/oceaClub.png" alt=""/>
+      <div class="flex column centerC">
+        <h4>Ocean Club</h4>
+        <i class="fab fa-github fa-3x"></i>
+        <a class="centerT" href="https://github.com/obero0n/Ocea">Github</a>
+        <p class="centerT">
+          Reproduction du site de sport ocea : http://www.oceaclub.com/.
+        </p>
+      </div>
+    </article>
+  </div>
+
+
+
 <!-- End "Travaux" section-->
 <!-- bubble o° -->
 <div class="boxBubble">
@@ -150,8 +180,8 @@
 </div>
 <!-- End bubble o° -->
 <!-- Start "Graphique" section"-->
+<h3 id="Graphique" class="fontcolor centerT"><span>G</span>raphique</h3>
 <article class="flex column">
-  <h3 id="Graphique" class="fontcolor centerT"><span>G</span>raphique</h3>
   <i> <a href="#">lien?(deviant art/pinterst)</a> </i>
   <img src="" alt="">
   <div class="flex column centerC">
