@@ -316,7 +316,7 @@ header ul{
   justify-content: space-between;
   width: 100%;
   height: 15vh;
-
+  margin-top: 2%;
 }
 
 .fix{
@@ -415,36 +415,6 @@ footer ul{
 
                                 /* Desktop */
 @media screen and (min-width: 1200px){
-  /* test aside diver */
-  /* .tape{
-    position: fixed;
-    width: 10em;
-    height: 100%;
-    margin: 0;
-  padding: 0;
-
-  }
-  .horizontal-stripe {
-    background: repeating-linear-gradient(0deg,
-      white, white 5px,
-      transparent 0, transparent 20px);
-    width: 10em;
-     height: 100%;
-    position :absolute;
-    top: 0px;
-    padding: 0;
-  }
-  .hor{
-    background: repeating-linear-gradient(0deg,
-      transparent, transparent 18px,
-      white 0, white 20px);
-    width: 5em;
-    height: 100%;
-    position :absolute;
-    top: 6px;
-    right: 0;
-  } */
-  /* end test aside diver */
 /* common desktop */
 h3,h4,h5,h6{
   margin: 0;
@@ -588,6 +558,7 @@ main:not(.boxBubble){
 }
 main article{
   width: 30%;
+
   background-color: rgba(64, 196, 137, 0.2);
   padding: 1em;
 
@@ -597,6 +568,23 @@ main article div{
 }
 main article i {
     align-self: flex-start;
+}
+                                  /* CV */
+
+#cv section{
+  display: flex;
+  justify-content: space-between;
+}
+#cv section article{
+  background-color: rgba(64, 196, 137, 0.2);
+  width: 40%;
+}
+#cvExp *{
+  text-align: center !important;
+}
+#cvExp article{
+  background-color: rgba(64, 196, 137, 0.2); !important;
+  width: 20% !important;
 }
 /* ==========================================================================
    Helper classes
