@@ -213,7 +213,9 @@ main ul{
 /* °°°°°°°°°°°°°°°°°°°°°°°°°°°End Common Rules°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° */
                                 /* Mobile first */
 /* start Nav  */
-
+#classicNav{
+  display: none;
+}
 nav{
   /* background-color: rgba(64, 196, 137, 0.5); */
   background-color: rgba(154, 114, 81, 0.9);
@@ -293,10 +295,14 @@ header article{
   height: 100%;
 }
 header article div:first-child{
-  width: 55%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 header article div:first-child img{
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 header ul{
   margin: 0;
@@ -362,12 +368,12 @@ header ul{
 }
 .rightBar{
   background-color: #40C489;
-  height: 0.063em;
+  height: 1.5px;
   width: 40%;
 }
 .leftBar{
   background-color: #40C489;
-  height: 0.063em;
+  height: 1.5px;
   width: 40%;
 }
 
@@ -408,13 +414,19 @@ footer ul{
 }
   /* header tablette */
   header article div:first-child {
-      width: 35%;
+      width: 200px;
+      height: 200px;
   }
 
 }
 
                                 /* Desktop */
 @media screen and (min-width: 1200px){
+  #classicNav{
+    display: flex;
+    height: 10vh;
+    margin-bottom: 2em;
+  }
 /* common desktop */
 h3,h4,h5,h6{
   margin: 0;
@@ -528,11 +540,12 @@ nav{
 
  /* start header Desktop */
  header article div:first-child {
-     width: 25%;
+     width: 250px;
+     height: 250px;
  }
  header{
    margin: 0;
-   height: 100vh;
+   height: 90vh;
  }
  header article{
    justify-content: space-between;
