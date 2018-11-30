@@ -8,7 +8,7 @@ function getProject($db) {
 
 //Fonction qui récupère la table ! Project et Image ! en DB
 function getProjects($db){
-  $query = $db->query("SELECT * FROM Project INNER JOIN Image ON Project.id_project = Image.id_image");
+  $query = $db->query("SELECT * FROM Project INNER JOIN Image ON Project.image_id = Image.id_image");
   $stuff = $query->fetchall(PDO::FETCH_ASSOC);
   return $stuff;
 }
@@ -33,6 +33,8 @@ function lastID($db){
   $stuff = $query->fetch(PDO::FETCH_ASSOC);
   return $stuff;
 }
+
+
 
 
 

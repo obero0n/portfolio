@@ -3,28 +3,21 @@ require "../Model/db.php";
 require "../Model/projectManager.php";
 require "../Model/imageManager.php";
 
-// $projectName = $_POST["Project_name"]
-// $projectDescription = $_POST["Project_description"]
 
-  //On sécurise les entrées du formulaire et on transforme en integer ce qui doit l'être pour la DB
-// foreach ($_POST as $key => $value) {
-//   $_POST[$key] = htmlspecialchars($value);
-//   if($key === "Project_name" || $key === "Project_description") {
-//     $_POST[$key] = intval($value);
-//   }
-// }
-
-// if(addProject($_POST, $db)) {
-//   header("Location: home.php?success=Votre projet a bien été ajouté au portfolio");
-//   exit;
-// }
-
+// Ici on met le chemin de l'image
 $src = "img/" . $_FILES["Project_image"]["name"];
+
+// On appele la function pour recuperé l'image
 addImage($src,$_FILES["Project_image"]["name"],$db);
 
+// On appele la function pour recuperé le derniere ID
 $lastID = lastID($db) ;
 
+// Puis on appele la function pour ajouter le projet
 addProject($_POST ,$lastID["LAST_INSERT_ID()"], $db);
+// Et enfin on on deplace l'image dans le fichier img.
 move_uploaded_file($_FILES["Project_image"]['tmp_name'], "../" . $src);
+header("location truehome.php");
+header('Location: truehome.php');
 
  ?>

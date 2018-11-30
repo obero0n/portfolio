@@ -11,7 +11,7 @@ $password = $_POST["Password"];
 $user = getUser($db);
 
 if ($name === $user["First_name"] && $password === $user["Password"]) {
-  header("Location:home.php");
+  header("Location:truehome.php");
 }
 else {
   echo "ko";
