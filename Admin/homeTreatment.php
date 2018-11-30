@@ -18,6 +18,6 @@ addProject($_POST ,$lastID["LAST_INSERT_ID()"], $db);
 // Et enfin on on deplace l'image dans le fichier img.
 move_uploaded_file($_FILES["Project_image"]['tmp_name'], "../" . $src);
 header("location truehome.php");
-header('Location: truehome.php');
+
 
  ?>

@@ -38,7 +38,7 @@ $Projects = getProjects($db);
                    <td><?php echo $result["Project_description"]; ?></td>
 
                    <td>
-                       <a href="updateExperiences.php?id=<?php echo $result["id_project"]; ?>"><i class="fas fa-edit fa-2x"></i></a>
+                       <a href="updateProject.php?id=<?php echo $result["id_project"]; ?>"><i class="fas fa-edit fa-2x"></i></a>
                        <a href="delExperiences.php?id=<?php echo $result["id_project"]; ?>"><i class="fas fa-trash-alt fa-2x"></i></a>
                    </td>
                </tr>

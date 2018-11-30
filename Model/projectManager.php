@@ -36,6 +36,20 @@ function lastID($db){
 
 
 
+//Fonction pour modifier les valeurs d'une question en base de données
+function updateProject($form, $db)
+{
+   $query = $db->prepare("UPDATE Project SET Project_name = :name, Project_description = :description  WHERE id_project = :id");
+   $result = $query->execute([
+  
+       "name" => $form["name"],
+       "description" => $form["description"]
+
+
+   ]);
+   return $result;
+   $query->closeCursor();
+}
 
 
  ?>
